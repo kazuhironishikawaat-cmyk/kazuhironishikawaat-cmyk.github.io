@@ -1,37 +1,99 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ArchTrek Inc. | アーキトレック株式会社</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            margin: 40px;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f7fa;
             color: #222;
+            line-height: 1.8;
         }
-        h1 {
+
+        /* --- Header --- */
+        header {
+            background: #ffffff;
+            padding: 20px 40px;
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .logo span.a {
             color: #0046FF;
         }
-        .footer {
-            margin-top: 50px;
+        .logo span.t {
+            color: #8C1A3C;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #0046FF;
+        }
+
+        /* --- Container --- */
+        .section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .catch {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
             font-size: 12px;
-            color: #888;
+            padding: 20px;
+            color: #777;
+            background: #ffffff;
+            border-top: 1px solid #e5e5e5;
         }
     </style>
 </head>
+
 <body>
-    <h1>ArchTrek Inc.</h1>
-    <p>アーキトレック株式会社の公式ウェブサイトです。</p>
+    <header>
+        <div class="logo"><span class="a">A</span>rch<span class="t">T</span>rek Inc.</div>
+        <nav>
+            <a href="about.html">会社概要</a>
+            <a href="services.html">事業内容</a>
+            <a href="contact.html">お問い合わせ</a>
+        </nav>
+    </header>
 
-    <h2>会社概要</h2>
-    <p>2025年12月1日設立。ソフトウェア開発、ITソリューション、アウトドア関連事業などを展開。</p>
+    <div class="section">
+        <h1>アーキトレック株式会社</h1>
+        <p class="catch">少数精鋭で高度なソフトウェアアーキテクチャを設計・実装するテクノロジーカンパニー</p>
 
-    <h2>お問い合わせ</h2>
-    <p>Email: <a href="mailto:info@archtrek.co.jp">info@archtrek.co.jp</a></p>
-
-    <div class="footer">
-        © 2025 ArchTrek Inc. All rights reserved.
+        <p>
+            ハードウェア制御・計測システム開発（AMI-System）を中心に、<br>
+            データ処理基盤、Pythonによる分析/自動化、Web・クラウド連携など、<br>
+            幅広い領域で高品質なソフトウェアを提供しています。
+        </p>
     </div>
+
+    <footer>
+        © 2025 ArchTrek Inc. All rights reserved.
+    </footer>
 </body>
 </html>
