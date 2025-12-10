@@ -9,7 +9,7 @@
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.7;
-            color: #222;
+            color: #333;  /* ← 本文色を少し薄く */
             background: #fafafa;
             display: flex;
             flex-direction: column;
@@ -42,8 +42,12 @@
         .contact a {
             font-size: 16px;
             text-decoration: none;
-            color: #0046FF;
+            color: #555;   /* ← 上品なグレーに変更 */
             font-weight: 600;
+        }
+
+        .contact a:hover {
+            color: #000;   /* ← ホバーで少し濃く */
         }
 
         main {
@@ -66,7 +70,7 @@
         }
 
         .final-contact {
-            margin-top: 70px;     /* ← 大きく離す */
+            margin-top: 70px;
             font-size: 16px;
             color: #444;
             font-weight: 500;
@@ -130,8 +134,10 @@
     </p>
 
     <p class="final-contact">
-        ■ ご相談・ご依頼は、右上の「お問い合わせ」よりご連絡ください。
+        ■ ご相談やご依頼、各種お問い合わせにつきましては随時承っております。<br>
+        ■ 右上の「お問い合わせ」より、メールにてご連絡いただけますと幸いです。
     </p>
+
 </main>
 
 <footer>
